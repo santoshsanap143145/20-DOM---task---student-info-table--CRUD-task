@@ -161,6 +161,7 @@ const updateStdOnClick = () => {
     contact: contactControl.value,
     id: updateId,
   };
+  stdFrom.reset();
   const getIndex = stdArray.findIndex((std) => std.id === updateId);
   stdArray[getIndex] = updatedStd;
   localStorage.setItem("stdArray", JSON.stringify(stdArray));
